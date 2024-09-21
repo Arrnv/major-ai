@@ -91,3 +91,22 @@ def main():
 # Run the app
 if __name__ == '__main__':
     main()
+
+
+
+# import tensorflow as tf
+
+# model = tf.keras.Sequential([
+#     tf.keras.layers.Dense(64, activation='relu', input_dim=X_train.shape[1], kernel_regularizer=tf.keras.regularizers.l2(0.01)),
+#     tf.keras.layers.Dropout(0.3),
+#     tf.keras.layers.Dense(64, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.01)),
+#     tf.keras.layers.Dropout(0.3),
+#     tf.keras.layers.Dense(32, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(0.01)),
+#     tf.keras.layers.Dense(1, activation='sigmoid') # Output layer for binary classification
+# ])
+
+# model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+#               loss='binary_crossentropy', 
+#               metrics=['accuracy'])
+
+# model.summary()
